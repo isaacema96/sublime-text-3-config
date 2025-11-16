@@ -13,7 +13,5 @@
 	"theme": "Material-Theme-Palenight.sublime-theme",
 	"color_scheme": "Monokai Pro (Filter Octagon).sublime-color-scheme",
 	"index_files": true,
-	"show_minimap": false
+	"show_minimap": false,
 }
-
-	

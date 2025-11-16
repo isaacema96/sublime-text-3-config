@@ -27,5 +27,11 @@
 		{ "keys": ["ctrl+e"], "command": "toggle_side_bar" },
 		// Atajo para alternar la visibilidad de la Barra de Estado (Status Bar)
 		{ "keys": ["ctrl+s", "ctrl+b"], "command": "toggle_status_bar" },
-		{ "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" }
+		{ "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" },
+		{ "keys": ["ctrl+n"], "command": "find_under_expand" },
+		{ "keys": ["n"], "command": "find_under_expand_skip" },
+		{ "keys": ["ctrl+alt+k"], "command": "select_lines", "args": {"forward": false} },
+		{ "keys": ["ctrl+alt+j"], "command": "select_lines", "args": {"forward": true} },
+		{ "keys": ["ctrl+shift+k"], "command": "swap_line_up" },
+		{ "keys": ["ctrl+shift+j"], "command": "swap_line_down" },
 	]	
