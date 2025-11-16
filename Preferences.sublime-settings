@@ -1,0 +1,18 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"font_size": 9,
+	"ignored_packages": [
+	],
+	"relative_line_numbers": true,
+	"font_face": "Operator Mono Lig",
+	"font_options": ["gray_antialias", "dlig"],
+	"caret_extra_top": 1,
+	"caret_extra_bottom": 1,
+	"caret_extra_width": 2,
+	"theme": "Material-Theme-Palenight.sublime-theme",
+	"color_scheme": "Monokai Pro (Filter Octagon).sublime-color-scheme",
+	"index_files": true,
+}
+
+	
