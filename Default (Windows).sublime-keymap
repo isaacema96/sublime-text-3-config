@@ -1,24 +1,30 @@
 	[
-	    {
-	        "keys": ["j", "j"], 
-	        "command": "exit_insert_mode",
-	        "context": [
-	            { 
-	                "key": "setting.command_mode", 
-	                "operand": false 
-	            },
-	            { 
-	                "key": "setting.is_widget", 
-	                "operand": false 
-	            }
-	        ]
-	    },
+		{
+			"keys": ["j", "j"], 
+			"command": "exit_insert_mode",
+			"context": [
+				{ 
+					"key": "setting.command_mode", 
+					"operand": false 
+				},
+				{ 
+					"key": "setting.is_widget", 
+					"operand": false 
+				}
+			]
+		},
 
-	     { "keys": ["alt+`"], "command": "toggle_terminus_panel" },
+		{ "keys": ["alt+`"], "command": "toggle_terminus_panel" },
 
-	     {
-	         "keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
-	             "cwd": "${file_path:${folder}}"
-	         }
-	     },
+		{
+			"keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
+				"cwd": "${file_path:${folder}}"
+			}
+		},
+		{ "keys": ["ctrl+h"], "command": "focus_group", "args": { "group": 0 } },
+		{ "keys": ["ctrl+l"], "command": "focus_group", "args": { "group": 1 } },
+		{ "keys": ["ctrl+shift+t"], "command": "toggle_tabs" },
+		{ "keys": ["ctrl+e"], "command": "toggle_side_bar" },
+		// Atajo para alternar la visibilidad de la Barra de Estado (Status Bar)
+		{ "keys": ["ctrl+s", "ctrl+b"], "command": "toggle_status_bar" },
 	]	
