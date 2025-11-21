@@ -17,9 +17,15 @@
 		{ "keys": ["alt+`"], "command": "toggle_terminus_panel" },
 
 		{
-			"keys": ["ctrl+alt+t"], "command": "terminus_open", "args": {
-				"cwd": "${file_path:${folder}}"
-			}
+
+	        "keys": ["ctrl+alt+t"],
+	        "command": "terminus_open",
+	        "args": {
+	            "cmd": "pwsh.exe",
+	            "cwd": "${file_path:${folder}}",
+	            "panel_name": "PowerShell Core"
+	        }
+			 
 		},
 		{ "keys": ["ctrl+h"], "command": "focus_group", "args": { "group": 0 } },
 		{ "keys": ["ctrl+l"], "command": "focus_group", "args": { "group": 1 } },
@@ -29,7 +35,7 @@
 		{ "keys": ["ctrl+s", "ctrl+b"], "command": "toggle_status_bar" },
 		{ "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" },
 		{ "keys": ["ctrl+n"], "command": "find_under_expand" },
-		{ "keys": ["n"], "command": "find_under_expand_skip" },
+		{ "keys": ["ctrl+k"], "command": "find_under_expand_skip" },
 		{ "keys": ["ctrl+alt+k"], "command": "select_lines", "args": {"forward": false} },
 		{ "keys": ["ctrl+alt+j"], "command": "select_lines", "args": {"forward": true} },
 		{ "keys": ["ctrl+shift+k"], "command": "swap_line_up" },
