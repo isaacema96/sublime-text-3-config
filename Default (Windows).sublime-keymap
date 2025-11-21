@@ -14,19 +14,18 @@
 			]
 		},
 
-		{ "keys": ["alt+`"], "command": "toggle_terminus_panel" },
 
-		{
+		{ 
+			"keys": ["alt+`"], 
+			"command": "terminus_open",
+			"args": {
+				"cmd": "pwsh.exe",
+				"cwd": "${file_path:${folder}}",
+				"panel_name": "PowerShell Core"
+		}
+	},
 
-	        "keys": ["ctrl+alt+t"],
-	        "command": "terminus_open",
-	        "args": {
-	            "cmd": "pwsh.exe",
-	            "cwd": "${file_path:${folder}}",
-	            "panel_name": "PowerShell Core"
-	        }
-			 
-		},
+
 		{ "keys": ["ctrl+h"], "command": "focus_group", "args": { "group": 0 } },
 		{ "keys": ["ctrl+l"], "command": "focus_group", "args": { "group": 1 } },
 		{ "keys": ["ctrl+shift+t"], "command": "toggle_tabs" },
