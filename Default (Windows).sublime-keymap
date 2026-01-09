@@ -39,4 +39,8 @@
 		{ "keys": ["ctrl+alt+j"], "command": "select_lines", "args": {"forward": true} },
 		{ "keys": ["ctrl+shift+k"], "command": "swap_line_up" },
 		{ "keys": ["ctrl+shift+j"], "command": "swap_line_down" },
+
+		// Subir y bajar en el panel con las teclas "j" Y "k"
+		{ "keys": ["j"], "command": "move", "args": {"by": "lines", "forward": true}, "context": [ { "key": "control", "operand": "sidebar_tree" } ] },
+    	{ "keys": ["k"], "command": "move", "args": {"by": "lines", "forward": false}, "context": [ { "key": "control", "operand": "sidebar_tree" } ] }
 	]	
